@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rate A Movie</title>
+  <style>
+    body {
+      background-color: #d2cccc;
+      font-family: monospace;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #0f7097;
+      width: 500px;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    .header {
+      background-color: #f9e445;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .inner-box {
+      background-color: #f5f5f5;
+      margin: 15px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .circle-icon {
+      background-color: #e74c3c;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .circle-icon img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+    }
+
+    .input-text {
+      width: 100%;
+      padding: 8px;
+      text-align: center;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 60px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">RATE A MOVIE</div>
+    
+    <div class="subtitle">Share your top pick movie and write a review.</div>
+
+    <div class="inner-box">
+      <form>
+        <div class="circle-icon">
+          <img src="https://www.pngmart.com/files/23/Movie-Icon-PNG-Isolated-Pic.png" alt="Clapperboard">
+        </div>
+
+        <input type="text" class="input-text" placeholder="Movie Title">
+
+        <div class="section">
+          <b>Genres (select all that apply):</b><br>
+          <input type="checkbox"> Action
+          <input type="checkbox"> Comedy
+          <input type="checkbox"> Drama
+          <input type="checkbox"> Fantasy
+          <input type="checkbox"> Sci-Fi
+          <input type="checkbox"> Horror
+          <input type="checkbox"> Romance
+          <input type="checkbox"> Thriller
+          <input type="checkbox"> Animation
+          <input type="checkbox"> Documentary
+          <input type="checkbox"> Rom-Com
+          <input type="checkbox"> Mystery
+          <input type="checkbox"> Musical
+          <input type="checkbox"> Adventure
+          <input type="checkbox"> Biography
+          <input type="text" class="input-text" placeholder="Other/Unmentioned Genre from the list">
+        </div>
+
+        <div class="section">
+          <b>Rating:</b><br>
+          <input type="radio" name="star"> ☆
+          <input type="radio" name="star"> ☆☆
+          <input type="radio" name="star"> ☆☆☆
+          <input type="radio" name="star"> ☆☆☆☆
+          <input type="radio" name="star"> ☆☆☆☆☆
+        </div>
+
+        <div class="section">
+          <textarea placeholder="Write your review..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Review</button>
+
+        <div class="footer">
+          Movie Review Tips: <a href="https://www.nyfa.edu/student-resources/9-tips-for-writing-a-film-review/" target="_blank">Click here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
